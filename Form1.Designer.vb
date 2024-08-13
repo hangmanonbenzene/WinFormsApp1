@@ -30,6 +30,8 @@ Partial Class Form1
         btnMal = New Button()
         lblErgebnis = New Label()
         btnModulo = New Button()
+        btnPotenz = New Button()
+        lsbErgebnisse = New ListBox()
         SuspendLayout()
         ' 
         ' btnPlus
@@ -47,6 +49,7 @@ Partial Class Form1
         txtErsteZahl.Name = "txtErsteZahl"
         txtErsteZahl.Size = New Size(100, 23)
         txtErsteZahl.TabIndex = 1
+        txtErsteZahl.Text = "0"
         ' 
         ' txtZweiteZahl
         ' 
@@ -54,6 +57,7 @@ Partial Class Form1
         txtZweiteZahl.Name = "txtZweiteZahl"
         txtZweiteZahl.Size = New Size(100, 23)
         txtZweiteZahl.TabIndex = 2
+        txtZweiteZahl.Text = "0"
         ' 
         ' btnMinus
         ' 
@@ -84,26 +88,46 @@ Partial Class Form1
         ' 
         ' lblErgebnis
         ' 
-        lblErgebnis.AutoSize = True
-        lblErgebnis.Location = New Point(351, 54)
+        lblErgebnis.BorderStyle = BorderStyle.FixedSingle
+        lblErgebnis.Location = New Point(321, 51)
         lblErgebnis.Name = "lblErgebnis"
-        lblErgebnis.Size = New Size(0, 15)
+        lblErgebnis.Size = New Size(221, 23)
         lblErgebnis.TabIndex = 6
         ' 
         ' btnModulo
         ' 
         btnModulo.Location = New Point(109, 186)
         btnModulo.Name = "btnModulo"
-        btnModulo.Size = New Size(206, 48)
+        btnModulo.Size = New Size(100, 48)
         btnModulo.TabIndex = 7
         btnModulo.Text = "Division mit Rest"
         btnModulo.UseVisualStyleBackColor = True
+        ' 
+        ' btnPotenz
+        ' 
+        btnPotenz.Location = New Point(215, 186)
+        btnPotenz.Name = "btnPotenz"
+        btnPotenz.Size = New Size(100, 48)
+        btnPotenz.TabIndex = 8
+        btnPotenz.Text = "Hoch"
+        btnPotenz.UseVisualStyleBackColor = True
+        ' 
+        ' lsbErgebnisse
+        ' 
+        lsbErgebnisse.FormattingEnabled = True
+        lsbErgebnisse.ItemHeight = 15
+        lsbErgebnisse.Location = New Point(321, 80)
+        lsbErgebnisse.Name = "lsbErgebnisse"
+        lsbErgebnisse.Size = New Size(221, 154)
+        lsbErgebnisse.TabIndex = 9
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lsbErgebnisse)
+        Controls.Add(btnPotenz)
         Controls.Add(btnModulo)
         Controls.Add(lblErgebnis)
         Controls.Add(btnGeteilt)
@@ -126,5 +150,7 @@ Partial Class Form1
     Friend WithEvents btnMal As Button
     Friend WithEvents lblErgebnis As Label
     Friend WithEvents btnModulo As Button
+    Friend WithEvents btnPotenz As Button
+    Friend WithEvents lsbErgebnisse As ListBox
 
 End Class
