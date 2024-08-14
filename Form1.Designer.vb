@@ -22,137 +22,18 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        btnPlus = New Button()
-        txtErsteZahl = New TextBox()
-        txtZweiteZahl = New TextBox()
-        btnMinus = New Button()
-        btnGeteilt = New Button()
-        btnMal = New Button()
-        lblErgebnis = New Label()
-        btnModulo = New Button()
-        btnPotenz = New Button()
-        lsbErgebnisse = New ListBox()
         SuspendLayout()
-        ' 
-        ' btnPlus
-        ' 
-        btnPlus.Location = New Point(138, 115)
-        btnPlus.Name = "btnPlus"
-        btnPlus.Size = New Size(100, 47)
-        btnPlus.TabIndex = 0
-        btnPlus.Text = "Plus"
-        btnPlus.UseVisualStyleBackColor = True
-        ' 
-        ' txtErsteZahl
-        ' 
-        txtErsteZahl.Location = New Point(138, 86)
-        txtErsteZahl.Name = "txtErsteZahl"
-        txtErsteZahl.Size = New Size(100, 23)
-        txtErsteZahl.TabIndex = 1
-        txtErsteZahl.Text = "0"
-        ' 
-        ' txtZweiteZahl
-        ' 
-        txtZweiteZahl.Location = New Point(244, 86)
-        txtZweiteZahl.Name = "txtZweiteZahl"
-        txtZweiteZahl.Size = New Size(100, 23)
-        txtZweiteZahl.TabIndex = 2
-        txtZweiteZahl.Text = "0"
-        ' 
-        ' btnMinus
-        ' 
-        btnMinus.Location = New Point(244, 115)
-        btnMinus.Name = "btnMinus"
-        btnMinus.Size = New Size(100, 47)
-        btnMinus.TabIndex = 3
-        btnMinus.Text = "Minus"
-        btnMinus.UseVisualStyleBackColor = True
-        ' 
-        ' btnGeteilt
-        ' 
-        btnGeteilt.Location = New Point(244, 168)
-        btnGeteilt.Name = "btnGeteilt"
-        btnGeteilt.Size = New Size(100, 47)
-        btnGeteilt.TabIndex = 5
-        btnGeteilt.Text = "Geteilt"
-        btnGeteilt.UseVisualStyleBackColor = True
-        ' 
-        ' btnMal
-        ' 
-        btnMal.Location = New Point(138, 168)
-        btnMal.Name = "btnMal"
-        btnMal.Size = New Size(100, 47)
-        btnMal.TabIndex = 4
-        btnMal.Text = "Mal"
-        btnMal.UseVisualStyleBackColor = True
-        ' 
-        ' lblErgebnis
-        ' 
-        lblErgebnis.BorderStyle = BorderStyle.FixedSingle
-        lblErgebnis.Location = New Point(350, 86)
-        lblErgebnis.Name = "lblErgebnis"
-        lblErgebnis.Size = New Size(221, 23)
-        lblErgebnis.TabIndex = 6
-        ' 
-        ' btnModulo
-        ' 
-        btnModulo.Location = New Point(138, 221)
-        btnModulo.Name = "btnModulo"
-        btnModulo.Size = New Size(100, 48)
-        btnModulo.TabIndex = 7
-        btnModulo.Text = "Division mit Rest"
-        btnModulo.UseVisualStyleBackColor = True
-        ' 
-        ' btnPotenz
-        ' 
-        btnPotenz.Location = New Point(244, 221)
-        btnPotenz.Name = "btnPotenz"
-        btnPotenz.Size = New Size(100, 48)
-        btnPotenz.TabIndex = 8
-        btnPotenz.Text = "Hoch"
-        btnPotenz.UseVisualStyleBackColor = True
-        ' 
-        ' lsbErgebnisse
-        ' 
-        lsbErgebnisse.FormattingEnabled = True
-        lsbErgebnisse.ItemHeight = 15
-        lsbErgebnisse.Location = New Point(350, 115)
-        lsbErgebnisse.Name = "lsbErgebnisse"
-        lsbErgebnisse.Size = New Size(221, 154)
-        lsbErgebnisse.TabIndex = 9
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(747, 409)
-        Controls.Add(lsbErgebnisse)
-        Controls.Add(btnPotenz)
-        Controls.Add(btnModulo)
-        Controls.Add(lblErgebnis)
-        Controls.Add(btnGeteilt)
-        Controls.Add(btnMal)
-        Controls.Add(btnMinus)
-        Controls.Add(txtZweiteZahl)
-        Controls.Add(txtErsteZahl)
-        Controls.Add(btnPlus)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-
-    Friend WithEvents btnPlus As Button
-    Friend WithEvents txtErsteZahl As TextBox
-    Friend WithEvents txtZweiteZahl As TextBox
-    Friend WithEvents btnMinus As Button
-    Friend WithEvents btnGeteilt As Button
-    Friend WithEvents btnMal As Button
-    Friend WithEvents lblErgebnis As Label
-    Friend WithEvents btnModulo As Button
-    Friend WithEvents btnPotenz As Button
-    Friend WithEvents lsbErgebnisse As ListBox
 
 End Class
