@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Button1 = New Button()
-        CheckBox1 = New CheckBox()
         CheckBox2 = New CheckBox()
+        CheckBox1 = New CheckBox()
         CheckBox3 = New CheckBox()
         CheckBox4 = New CheckBox()
         Label1 = New Label()
@@ -43,25 +43,25 @@ Partial Class Form1
         Button1.Text = "Rechnen"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
-        ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(48, 128)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(31, 19)
-        CheckBox1.TabIndex = 1
-        CheckBox1.Text = "-"
-        CheckBox1.UseVisualStyleBackColor = True
-        ' 
         ' CheckBox2
         ' 
         CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(48, 103)
+        CheckBox2.Location = New Point(48, 128)
         CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(34, 19)
-        CheckBox2.TabIndex = 2
-        CheckBox2.Text = "+"
+        CheckBox2.Size = New Size(31, 19)
+        CheckBox2.TabIndex = 1
+        CheckBox2.Text = "-"
         CheckBox2.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(48, 103)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(34, 19)
+        CheckBox1.TabIndex = 2
+        CheckBox1.Text = "+"
+        CheckBox1.UseVisualStyleBackColor = True
         ' 
         ' CheckBox3
         ' 
@@ -115,8 +115,8 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(CheckBox4)
         Controls.Add(CheckBox3)
-        Controls.Add(CheckBox2)
         Controls.Add(CheckBox1)
+        Controls.Add(CheckBox2)
         Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
@@ -129,8 +129,8 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox4 As CheckBox
     Friend WithEvents Label1 As Label
