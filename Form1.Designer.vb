@@ -36,7 +36,7 @@ Partial Class Form1
         ' 
         ' btnPlus
         ' 
-        btnPlus.Location = New Point(109, 80)
+        btnPlus.Location = New Point(138, 115)
         btnPlus.Name = "btnPlus"
         btnPlus.Size = New Size(100, 47)
         btnPlus.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class Form1
         ' 
         ' txtErsteZahl
         ' 
-        txtErsteZahl.Location = New Point(109, 51)
+        txtErsteZahl.Location = New Point(138, 86)
         txtErsteZahl.Name = "txtErsteZahl"
         txtErsteZahl.Size = New Size(100, 23)
         txtErsteZahl.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class Form1
         ' 
         ' txtZweiteZahl
         ' 
-        txtZweiteZahl.Location = New Point(215, 51)
+        txtZweiteZahl.Location = New Point(244, 86)
         txtZweiteZahl.Name = "txtZweiteZahl"
         txtZweiteZahl.Size = New Size(100, 23)
         txtZweiteZahl.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class Form1
         ' 
         ' btnMinus
         ' 
-        btnMinus.Location = New Point(215, 80)
+        btnMinus.Location = New Point(244, 115)
         btnMinus.Name = "btnMinus"
         btnMinus.Size = New Size(100, 47)
         btnMinus.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class Form1
         ' 
         ' btnGeteilt
         ' 
-        btnGeteilt.Location = New Point(215, 133)
+        btnGeteilt.Location = New Point(244, 168)
         btnGeteilt.Name = "btnGeteilt"
         btnGeteilt.Size = New Size(100, 47)
         btnGeteilt.TabIndex = 5
@@ -79,7 +79,7 @@ Partial Class Form1
         ' 
         ' btnMal
         ' 
-        btnMal.Location = New Point(109, 133)
+        btnMal.Location = New Point(138, 168)
         btnMal.Name = "btnMal"
         btnMal.Size = New Size(100, 47)
         btnMal.TabIndex = 4
@@ -89,14 +89,14 @@ Partial Class Form1
         ' lblErgebnis
         ' 
         lblErgebnis.BorderStyle = BorderStyle.FixedSingle
-        lblErgebnis.Location = New Point(321, 51)
+        lblErgebnis.Location = New Point(350, 86)
         lblErgebnis.Name = "lblErgebnis"
         lblErgebnis.Size = New Size(221, 23)
         lblErgebnis.TabIndex = 6
         ' 
         ' btnModulo
         ' 
-        btnModulo.Location = New Point(109, 186)
+        btnModulo.Location = New Point(138, 221)
         btnModulo.Name = "btnModulo"
         btnModulo.Size = New Size(100, 48)
         btnModulo.TabIndex = 7
@@ -105,7 +105,7 @@ Partial Class Form1
         ' 
         ' btnPotenz
         ' 
-        btnPotenz.Location = New Point(215, 186)
+        btnPotenz.Location = New Point(244, 221)
         btnPotenz.Name = "btnPotenz"
         btnPotenz.Size = New Size(100, 48)
         btnPotenz.TabIndex = 8
@@ -116,7 +116,7 @@ Partial Class Form1
         ' 
         lsbErgebnisse.FormattingEnabled = True
         lsbErgebnisse.ItemHeight = 15
-        lsbErgebnisse.Location = New Point(321, 80)
+        lsbErgebnisse.Location = New Point(350, 115)
         lsbErgebnisse.Name = "lsbErgebnisse"
         lsbErgebnisse.Size = New Size(221, 154)
         lsbErgebnisse.TabIndex = 9
@@ -125,7 +125,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(747, 409)
         Controls.Add(lsbErgebnisse)
         Controls.Add(btnPotenz)
         Controls.Add(btnModulo)
@@ -136,6 +136,8 @@ Partial Class Form1
         Controls.Add(txtZweiteZahl)
         Controls.Add(txtErsteZahl)
         Controls.Add(btnPlus)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
