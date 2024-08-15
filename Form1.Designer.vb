@@ -22,18 +22,55 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        btnStart = New Button()
+        lstScores = New ListBox()
+        txtName = New TextBox()
         SuspendLayout()
+        ' 
+        ' btnStart
+        ' 
+        btnStart.Location = New Point(12, 38)
+        btnStart.Name = "btnStart"
+        btnStart.Size = New Size(271, 54)
+        btnStart.TabIndex = 0
+        btnStart.Text = "Start"
+        btnStart.UseVisualStyleBackColor = True
+        ' 
+        ' lstScores
+        ' 
+        lstScores.FormattingEnabled = True
+        lstScores.ItemHeight = 15
+        lstScores.Location = New Point(12, 98)
+        lstScores.Name = "lstScores"
+        lstScores.Size = New Size(271, 304)
+        lstScores.TabIndex = 5
+        ' 
+        ' txtName
+        ' 
+        txtName.Location = New Point(12, 11)
+        txtName.MaxLength = 44
+        txtName.Name = "txtName"
+        txtName.Size = New Size(271, 23)
+        txtName.TabIndex = 6
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(747, 409)
+        Controls.Add(txtName)
+        Controls.Add(lstScores)
+        Controls.Add(btnStart)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents btnStart As Button
+    Friend WithEvents lstScores As ListBox
+    Friend WithEvents txtName As TextBox
 
 End Class
