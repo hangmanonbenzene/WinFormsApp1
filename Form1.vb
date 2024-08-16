@@ -6,6 +6,7 @@
         Dim iAktwert As Integer
         Dim stEingabe As String
         Dim aiZufallszahlen(21) As Integer
+        Dim iCount As Integer
 
 
         Do
@@ -17,7 +18,7 @@
                 iZiehwert = neueZahl()
                 MsgBox("Du ziehst " & iZiehwert & ".")
 
-                aiZufallszahlen(0) = iZiehwert
+                aiZufallszahlen(iCount) = iZiehwert
 
                 iAktwert += iZiehwert
 
@@ -38,7 +39,7 @@
                 MsgBox("Du hast das Spiel mit dem Wert " & iAktwert & " beendet.")
 
             End If
-
+            iCount += 1
         Loop Until stEingabe.ToLower = "nein"
 
     End Sub
