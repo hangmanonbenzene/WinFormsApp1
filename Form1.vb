@@ -5,7 +5,7 @@
         Dim iZiehwert As Integer
         Dim iAktwert As Integer
         Dim stEingabe As String
-
+        Dim aiZufallszahlen(21) As Integer
 
 
         Do
@@ -16,6 +16,8 @@
 
                 iZiehwert = neueZahl()
                 MsgBox("Du ziehst " & iZiehwert & ".")
+
+                aiZufallszahlen(0) = iZiehwert
 
                 iAktwert += iZiehwert
 
