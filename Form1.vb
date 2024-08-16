@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Private Sub btnPlus_Click(sender As Object, e As EventArgs) Handles btnPlus.Click
+    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnPlus.Click, btnMinus.Click, btnMal.Click, btnGeteilt.Click, btnModulo.Click, btnPotenz.Click
 
         Dim stErstezahl As Decimal
         stErstezahl = txtErsteZahl.Text
@@ -8,92 +8,36 @@
         Dim stZweitezahl As Decimal
         stZweitezahl = txtZweiteZahl.Text
 
-        Dim stErgebnis As Decimal
-        stErgebnis = stErstezahl + stZweitezahl
-        lblErgebnis.Text = stErgebnis
+        Dim stErgebnis As String
 
-    End Sub
+        If sender.Equals(btnPlus) Then
+            stErgebnis = stErstezahl + stZweitezahl
 
-    Private Sub btnMinus_Click(sender As Object, e As EventArgs) Handles btnMinus.Click
+        ElseIf sender.Equals(btnMinus) Then
+            stErgebnis = stErstezahl - stZweitezahl
 
-        Dim stErstezahl As Decimal
-        stErstezahl = txtErsteZahl.Text
+        ElseIf sender.Equals(btnMal) Then
+            stErgebnis = stErstezahl * stZweitezahl
 
-        Dim stZweitezahl As Decimal
-        stZweitezahl = txtZweiteZahl.Text
+        ElseIf sender.Equals(btnGeteilt) Then
+            If stZweitezahl = 0 Then
+                lblErgebnis.Text = "Division durch 0 nicht möglich"
+                Exit Sub
+            End If
+            stErgebnis = stErstezahl / stZweitezahl
 
-        Dim stErgebnis As Decimal
-        stErgebnis = stErstezahl - stZweitezahl
-        lblErgebnis.Text = stErgebnis
+        ElseIf sender.Equals(btnModulo) Then
+            If stZweitezahl = 0 Then
+                lblErgebnis.Text = "Division durch 0 nicht möglich"
+                Exit Sub
+            End If
+            stErgebnis = stErstezahl \ stZweitezahl & " Rest " & stErstezahl Mod stZweitezahl
 
-    End Sub
+        ElseIf sender.Equals(btnPotenz) Then
+            stErgebnis = stErstezahl ^ stZweitezahl
 
-    Private Sub btnMal_Click(sender As Object, e As EventArgs) Handles btnMal.Click
-
-        Dim stErstezahl As Decimal
-        stErstezahl = txtErsteZahl.Text
-
-        Dim stZweitezahl As Decimal
-        stZweitezahl = txtZweiteZahl.Text
-
-        Dim stErgebnis As Decimal
-        stErgebnis = stErstezahl * stZweitezahl
-        lblErgebnis.Text = stErgebnis
-
-    End Sub
-
-    Private Sub btnGeteilt_Click(sender As Object, e As EventArgs) Handles btnGeteilt.Click
-
-        Dim stErstezahl As Decimal
-        stErstezahl = txtErsteZahl.Text
-
-        Dim stZweitezahl As Decimal
-        stZweitezahl = txtZweiteZahl.Text
-
-        If stZweitezahl = 0 Then
-            lblErgebnis.Text = "Division durch 0 nicht möglich"
-            Exit Sub
         End If
 
-        Dim stErgebnis As Decimal
-        stErgebnis = stErstezahl / stZweitezahl
-        lblErgebnis.Text = stErgebnis
-
-    End Sub
-
-    Private Sub btnModulo_Click(sender As Object, e As EventArgs) Handles btnModulo.Click
-
-        Dim stErstezahl As Decimal
-        stErstezahl = txtErsteZahl.Text
-
-        Dim stZweitezahl As Decimal
-        stZweitezahl = txtZweiteZahl.Text
-
-        If stZweitezahl = 0 Then
-            lblErgebnis.Text = "Division durch 0 nicht möglich"
-            Exit Sub
-        End If
-
-        Dim stErgebnis1 As Decimal
-        stErgebnis1 = stErstezahl \ stZweitezahl
-
-        Dim stErgebnis2 As Decimal
-        stErgebnis2 = stErstezahl Mod stZweitezahl
-
-        lblErgebnis.Text = stErgebnis1 & " Rest " & stErgebnis2
-
-    End Sub
-
-    Private Sub btnPotenz_Click(sender As Object, e As EventArgs) Handles btnPotenz.Click
-
-        Dim stErstezahl As Decimal
-        stErstezahl = txtErsteZahl.Text
-
-        Dim stZweitezahl As Decimal
-        stZweitezahl = txtZweiteZahl.Text
-
-        Dim stErgebnis As Decimal
-        stErgebnis = stErstezahl ^ stZweitezahl
         lblErgebnis.Text = stErgebnis
 
     End Sub
@@ -127,7 +71,6 @@
             Exit Sub
         End If
 
-        ' Eintrag in Liste als erstes Element
         lsbErgebnisse.Items.Insert(0, stErgebnis)
 
     End Sub
