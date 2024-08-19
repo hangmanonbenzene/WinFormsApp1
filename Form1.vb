@@ -24,12 +24,38 @@
             If iCount >= 3 Then
 
                 MsgBox("Account blockiert")
-
+                Exit Sub
             End If
 
         Loop While stBenutzername <> stName Or stPasswort <> stPassword
 
         MsgBox("Anmeldung erfolgreich")
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim stBenutzername As String
+        Dim stPasswort As String
+
+        For iCount = 0 To 2
+
+            stBenutzername = InputBox("Benutzername einegeben")
+            stPasswort = InputBox("Passwort eingeben")
+
+            If stBenutzername <> stName Or stPasswort <> stPassword Then
+
+                MsgBox("Benutzername oder Passwort falsch")
+
+            ElseIf stBenutzername = stName And stPasswort = stPassword Then
+
+                MsgBox("Anmeldung erfolgreich")
+                Exit Sub
+
+            End If
+
+        Next
+
+        MsgBox("Account blockiert")
 
     End Sub
 
