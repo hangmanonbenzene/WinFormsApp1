@@ -22,18 +22,31 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Button1 = New Button()
         SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(216, 57)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(222, 76)
+        Button1.TabIndex = 0
+        Button1.Text = "Elemente der Liste einfügen"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(747, 409)
+        Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Button1 As Button
 
 End Class
