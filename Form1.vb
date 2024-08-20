@@ -9,39 +9,24 @@
 
 
         Dim iElementnummer As Integer = 1
-
+        Dim stElementliste As String = ""
 
         For iListe = 0 To iLängeliste - 1
 
 
 
-            InputBox(iElementnummer & " Element der Liste ")
+            astlistederelemente(iListe) = InputBox(iElementnummer & " Element der Liste ")
+
+
+            stElementliste = stElementliste & astlistederelemente(iListe) & vbCrLf
+
+
 
             iElementnummer += 1
-
         Next
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        MsgBox(stElementliste.Substring(0, stElementliste.Length - 2))
 
     End Sub
+
 End Class
