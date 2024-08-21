@@ -34,23 +34,24 @@ Partial Class Form1
         Label10 = New Label()
         Label11 = New Label()
         Label12 = New Label()
+        Button2 = New Button()
         Button1 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.BorderStyle = BorderStyle.FixedSingle
-        Label1.Location = New Point(117, 92)
+        Label1.Location = New Point(64, 67)
         Label1.Name = "Label1"
         Label1.Size = New Size(25, 25)
         Label1.TabIndex = 0
-        Label1.Text = "X"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label2
         ' 
         Label2.BorderStyle = BorderStyle.FixedSingle
-        Label2.Location = New Point(148, 92)
+        Label2.Location = New Point(95, 67)
         Label2.Name = "Label2"
         Label2.Size = New Size(25, 25)
         Label2.TabIndex = 1
@@ -59,7 +60,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.BorderStyle = BorderStyle.FixedSingle
-        Label3.Location = New Point(179, 92)
+        Label3.Location = New Point(126, 67)
         Label3.Name = "Label3"
         Label3.Size = New Size(25, 25)
         Label3.TabIndex = 2
@@ -68,7 +69,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.BorderStyle = BorderStyle.FixedSingle
-        Label4.Location = New Point(210, 92)
+        Label4.Location = New Point(157, 67)
         Label4.Name = "Label4"
         Label4.Size = New Size(25, 25)
         Label4.TabIndex = 3
@@ -77,7 +78,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.BorderStyle = BorderStyle.FixedSingle
-        Label5.Location = New Point(210, 126)
+        Label5.Location = New Point(157, 101)
         Label5.Name = "Label5"
         Label5.Size = New Size(25, 25)
         Label5.TabIndex = 4
@@ -86,7 +87,7 @@ Partial Class Form1
         ' Label6
         ' 
         Label6.BorderStyle = BorderStyle.FixedSingle
-        Label6.Location = New Point(210, 162)
+        Label6.Location = New Point(157, 137)
         Label6.Name = "Label6"
         Label6.Size = New Size(25, 25)
         Label6.TabIndex = 5
@@ -95,7 +96,7 @@ Partial Class Form1
         ' Label7
         ' 
         Label7.BorderStyle = BorderStyle.FixedSingle
-        Label7.Location = New Point(179, 162)
+        Label7.Location = New Point(157, 175)
         Label7.Name = "Label7"
         Label7.Size = New Size(25, 25)
         Label7.TabIndex = 6
@@ -104,7 +105,7 @@ Partial Class Form1
         ' Label8
         ' 
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Location = New Point(179, 200)
+        Label8.Location = New Point(126, 175)
         Label8.Name = "Label8"
         Label8.Size = New Size(25, 25)
         Label8.TabIndex = 7
@@ -113,7 +114,7 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.BorderStyle = BorderStyle.FixedSingle
-        Label9.Location = New Point(148, 200)
+        Label9.Location = New Point(95, 175)
         Label9.Name = "Label9"
         Label9.Size = New Size(25, 25)
         Label9.TabIndex = 8
@@ -122,7 +123,7 @@ Partial Class Form1
         ' Label10
         ' 
         Label10.BorderStyle = BorderStyle.FixedSingle
-        Label10.Location = New Point(117, 200)
+        Label10.Location = New Point(64, 175)
         Label10.Name = "Label10"
         Label10.Size = New Size(25, 25)
         Label10.TabIndex = 9
@@ -131,7 +132,7 @@ Partial Class Form1
         ' Label11
         ' 
         Label11.BorderStyle = BorderStyle.FixedSingle
-        Label11.Location = New Point(117, 162)
+        Label11.Location = New Point(64, 137)
         Label11.Name = "Label11"
         Label11.Size = New Size(25, 25)
         Label11.TabIndex = 10
@@ -140,27 +141,47 @@ Partial Class Form1
         ' Label12
         ' 
         Label12.BorderStyle = BorderStyle.FixedSingle
-        Label12.Location = New Point(117, 126)
+        Label12.Location = New Point(64, 101)
         Label12.Name = "Label12"
         Label12.Size = New Size(25, 25)
         Label12.TabIndex = 11
         Label12.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(387, 82)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(163, 69)
+        Button2.TabIndex = 13
+        Button2.Text = "Start"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Button1
         ' 
-        Button1.Location = New Point(369, 117)
+        Button1.Location = New Point(387, 160)
         Button1.Name = "Button1"
-        Button1.Size = New Size(162, 90)
-        Button1.TabIndex = 12
-        Button1.Text = "Würfeln"
+        Button1.Size = New Size(163, 69)
+        Button1.TabIndex = 14
+        Button1.Text = "Nächster Zug"
         Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(387, 235)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(163, 69)
+        Button3.TabIndex = 15
+        Button3.Text = "Stop"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(747, 409)
+        Controls.Add(Button3)
         Controls.Add(Button1)
+        Controls.Add(Button2)
         Controls.Add(Label12)
         Controls.Add(Label11)
         Controls.Add(Label10)
@@ -192,6 +213,8 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
 
 End Class

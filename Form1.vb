@@ -1,47 +1,33 @@
 ﻿Public Class Form1
-    Dim alblSpielfeld(11) As Label
-    Dim iSpielerposition As Integer = 0
-    Dim würfel As New Random
 
+    Dim Spiel As New Spiel
+
+    Public LabelListe(11) As Label
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Spiel.start()
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Spiel.nächsterZug()
+    End Sub
 
-        Dim iWürfelergebnis As Integer
-
-        iWürfelergebnis = würfel.Next(1, 7)
-
-        MsgBox("Würfelergebnis war " & iWürfelergebnis)
-
-        alblSpielfeld(iSpielerposition).Text = ""
-
-        iSpielerposition = (iSpielerposition + iWürfelergebnis) Mod 12
-
-        alblSpielfeld(iSpielerposition).Text = "X"
-
-
-
-
-
-
-
-
-
-
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Spiel.stopp()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        alblSpielfeld(0) = Label1
-        alblSpielfeld(1) = Label2
-        alblSpielfeld(2) = Label3
-        alblSpielfeld(3) = Label4
-        alblSpielfeld(4) = Label5
-        alblSpielfeld(5) = Label6
-        alblSpielfeld(6) = Label7
-        alblSpielfeld(7) = Label8
-        alblSpielfeld(8) = Label9
-        alblSpielfeld(9) = Label10
-        alblSpielfeld(10) = Label11
-        alblSpielfeld(11) = Label12
+        LabelListe(0) = Label1
+        LabelListe(1) = Label2
+        LabelListe(2) = Label3
+        LabelListe(3) = Label4
+        LabelListe(4) = Label5
+        LabelListe(5) = Label6
+        LabelListe(6) = Label7
+        LabelListe(7) = Label8
+        LabelListe(8) = Label9
+        LabelListe(9) = Label10
+        LabelListe(10) = Label11
+        LabelListe(11) = Label12
     End Sub
-
 End Class
