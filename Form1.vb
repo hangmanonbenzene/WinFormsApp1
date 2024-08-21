@@ -1,7 +1,6 @@
 ﻿Public Class Form1
 
     Dim Spiel As New Spiel
-
     Public LabelListe(11) As Label
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,4 +29,5 @@
         LabelListe(10) = Label11
         LabelListe(11) = Label12
     End Sub
+
 End Class

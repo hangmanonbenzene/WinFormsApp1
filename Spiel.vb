@@ -1,4 +1,5 @@
 ﻿Public Class Spiel
+
     Dim Spielfeld As Spielfeld
     Dim Figur1 As Figur
     Dim Figur2 As Figur
@@ -54,4 +55,5 @@
             Figur.setFeld(nächstesFeld)
         Next
     End Sub
+
 End Class
