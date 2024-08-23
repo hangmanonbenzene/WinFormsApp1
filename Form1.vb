@@ -4,11 +4,8 @@
 
     Private Sub Speichern() Handles Button1.Click
 
-        Dim Text As String
-        Dim Name As String
-
-        Text = txtText.Text
-        Name = txtDateiname.Text
+        Dim Text As String = txtText.Text
+        Dim Name As String = txtDateiname.Text
 
         Daten.Speichern(Name, Text)
 
@@ -22,6 +19,17 @@
     End Sub
 
     Private Sub Öffnen() Handles Button2.Click
+
+        Dim Name As String = ltbGespeicherteDateien.SelectedItem
+
+        If Name = Nothing Then
+            Exit Sub
+        End If
+
+        Dim Text As String = Daten.Öffnen(Name)
+
+        txtDateiname.Text = Name
+        txtText.Text = Text
 
     End Sub
 
