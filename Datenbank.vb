@@ -4,6 +4,7 @@
 
     Public Sub Speichern(Name As String, Text As String)
 
+
     End Sub
 
     Public Function Öffnen(Name) As String
